@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.company.test.web.item.Frame"
+        messagesPack="com.company.test.web.item">
+    <dsContext>
+        <datasource id="itemDs"
+                    class="com.company.test.entity.Item"
+                    view="_local"/>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <label datasource="itemDs"
+               property="test1"/>
+    </layout>
+</window>

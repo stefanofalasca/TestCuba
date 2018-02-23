@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.test.web.item.Screen"
+        messagesPack="com.company.test.web.item">
+    <dsContext>
+        <collectionDatasource id="itemsDs"
+                              class="com.company.test.entity.Item"
+                              view="_local">
+            <query>
+                <![CDATA[select e from test$Item e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <grid id="mainGrid"
+              height="100%"
+              spacing="true"
+              width="100%">
+            <columns count="2"/>
+            <rows>
+                <row/>
+                <row/>
+            </rows>
+        </grid>
+    </layout>
+</window>
